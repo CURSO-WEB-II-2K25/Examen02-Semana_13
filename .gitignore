@@ -1,0 +1,116 @@
+# ========================
+# ✅ Archivos de logs
+# ========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ========================
+# ✅ Dependencias / Módulos
+# ========================
+node_modules/
+bower_components/
+jspm_packages/
+
+# ========================
+# ✅ Salidas de build
+# ========================
+dist/
+build/
+out/
+coverage/
+lib/
+*.egg-info/
+*.local/
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.mypy_cache/
+.pyright/
+.cache/
+.next/
+.nuxt/
+.svelte-kit/
+
+# ========================
+# ✅ Entornos virtuales
+# ========================
+.venv/
+venv/
+env/
+ENV/
+
+# ========================
+# ✅ Archivos de sistema / basura
+# ========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.swn
+*.tmp
+*.bak
+*.old
+
+# ========================
+# ✅ Configuraciones de editores
+# ========================
+.vscode/*
+!.vscode/extensions.json  # se permite compartir extensiones sugeridas
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ========================
+# ✅ Archivos temporales
+# ========================
+*.tgz
+*.tar.gz
+*.zip
+*.7z
+*.rar
+
+# ========================
+# ✅ Archivos de lock y bases de datos locales
+# ========================
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+*.sqlite
+*.sqlite3
+*.db
+
+# ========================
+# ✅ Archivos de entorno
+# ========================
+.env
+.env.*
+!.env.example
+
+# ========================
+# ✅ Otros
+# ========================
+*.iml
+*.bak
+*.orig
+
+# ========================
+# ✅ Archivos de ChromaDB (Bases vectoriales locales)
+# ========================
+
+# Ignora todos los archivos dentro de chroma_storage/
+backend/chroma_storage/*
+
+# Excepto un archivo vacío para que Git mantenga la carpeta
+!backend/chroma_storage/.gitkeep
+
+# Además, ignora archivos binarios y bases
+*.bin
+*.pkl
